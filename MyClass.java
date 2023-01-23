@@ -8,6 +8,5 @@ class MyClass {
 
     public static void main(String[] args) {
         sumOfTwoNumbers(5, 7);
-
     }
 }
