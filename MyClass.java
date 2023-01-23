@@ -2,7 +2,7 @@ class MyClass {
     int year = 2023;
 
     public static int sumOfTwoNumbers(int a, int b) {
-        int c = a + b; //sum of 2 numbers
+        int c = a + b;
         return c;
     }
 
