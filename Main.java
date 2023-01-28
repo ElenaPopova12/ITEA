@@ -10,34 +10,27 @@ class Main {
         return sum;
     }
 
-    public static String sum(String word, String text) {
-
+    public static int sum(String word, String text) {
         int len1 = word.length();
         int len2 = text.length();
-
-
-        return String.valueOf((len1 + len2));
+        return (len1 + len2);
     }
 
-    public static boolean sum() {
+    public static int sum() {
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
-
         if (number > 0) {
-            return true;
-        }
-        if (number < 0) {
-            return false;
+            System.out.println(number + " " + "massege: number > 0 ");
+        } else if (number < 0) {
 
+            System.out.println(number + " " + "massege: number < 0 ");
         }
-        return false;
+        return number;
     }
 
     public static void main(String[] args) {
         System.out.println(sum(123));
         System.out.println(sum("word", "text"));
-        System.out.println(sum() + " " + "massege: number > 0 ");
-        System.out.println(sum() + " " + "massege: number < 0 ");
-
+        System.out.println(sum());
     }
 }
