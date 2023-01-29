@@ -43,7 +43,6 @@ public class Month {
                 System.out.println("isNotCorrect");
         }
     }
-
     public static void main(String[] args) {
         howDaysInMonth();
     }

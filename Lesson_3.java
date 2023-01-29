@@ -19,7 +19,6 @@ public class Lesson_3 {
             System.out.println("Max"+ " " + len3);
         }
     }
-
     public static void main(String[] args) {
         longWord();
     }
