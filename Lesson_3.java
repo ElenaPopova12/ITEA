@@ -1,25 +1,20 @@
 public class Lesson_3 {
-
-    public static void longWord() {
-        String s1 = "Mother";
-        String s2 = "Father";
-        String s3 = "GrandMother";
-
-        int len1 = s1.length();
-        int len2 = s2.length();
-        int len3 = s3.length();
-
-        if(len1>len2 && len1>len3){
-            System.out.println("Max"+ " " + len1);
-        }
-        else if(len2>len1 && len2>len3 ){
-            System.out.println("Max"+ " " + len2);
-        }
-        else{
-            System.out.println("Max"+ " " + len3);
+    public static void longWord(String s1, String s2, String s3) {
+        int a = s1.length();
+        int b = s2.length();
+        int c = s3.length();
+        if (a > b && a > c) {
+            System.out.println("result:\n" + s1);
+        } else if (b > a && b > c) {
+            System.out.println("result:\n" + s2);
+        } else if (c > a && c > b) {
+            System.out.println("result:\n" + s3);
+        } else {
+            System.out.println("result:\n" + "There are no the max-length word");
         }
     }
+
     public static void main(String[] args) {
-        longWord();
+        longWord("Mother", "Father", "GrandMother");
     }
 }
