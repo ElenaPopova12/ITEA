@@ -17,18 +17,22 @@ public class Student {
     }
 
     public void setName(String name) {
-        this.name = name;
+        if (name.length() > 3)
+            this.name = name;
     }
 
     public void setCourse(int course) {
-        this.course = course;
+        if (course > 0 && course <= 4)
+            this.course = course;
     }
 
     public void setGrade(int grade) {
-        this.grade = grade;
+        if (grade > 0 && grade <= 10) {
+            this.grade = grade;
+        }
     }
 
-    public static void showinfo() {
+    public void showinfo() {
         System.out.println("Student name:" + " " + name + " " + "Student course:" + " " +
                 course + " " + "Student grade:" + " " + grade);
     }
@@ -37,9 +41,9 @@ public class Student {
         public static void main(String[] args) {
             Student student = new Student();
             student.setName("Olena");
-            student.setCourse(3);
-            student.setGrade(5);
-            showinfo();
+            student.setCourse(1);
+            student.setGrade(10);
+            student.showinfo();
         }
     }
 }
